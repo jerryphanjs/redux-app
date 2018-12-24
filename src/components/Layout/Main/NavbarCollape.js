@@ -7,23 +7,23 @@ const links = [
    desc: 'Home',
   },
   {
-   path: '/listview',
+   path: '/home/listview',
    desc: 'List View',
   },
   {
-   path: '/gridview',
+   path: '/home/gridview',
    desc: 'Grid View',
   },
   {
-   path: '/threecolview',
+   path: '/home/threecolview',
    desc: 'Three Column',
   },
   {
-   path: '/fourcolview',
+   path: '/home/fourcolview',
    desc: 'Four Column',
   },
   {
-   path: '/generaview',
+   path: '/home/generaview',
    desc: 'General',
   },
   
@@ -47,12 +47,6 @@ const NavbarCollapse = () => {
                   </li>
                 ))  
               }
-              {/* <li className="active"><a href="index.html">Home </a></li>
-              <li><a href="list-view.html">List View</a></li>
-              <li><a href="grid-view.html">Grid View</a></li>
-              <li><a href="three-col.html">Three Column</a></li>
-              <li><a href="four-col.html">Four Column</a></li>
-              <li><a href="general.html">General Content</a></li> */}
             </ul>
             <form action="/" className="navbar-search pull-left">
               <input type="text" placeholder="Search" className="search-query span2" />

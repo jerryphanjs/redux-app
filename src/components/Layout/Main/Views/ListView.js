@@ -3,11 +3,11 @@ import React, { Component } from 'react';
 class ListView extends Component {
   render() {
     return (
-      <React.Fragment>
+      <div className="span9">
         <div className="well well-small">
           <div className="row-fluid">	  
             <div className="span2">
-              <img src="assets/img/a.jpg" alt="" />
+              <img src=" ./assets/img/a.jpg" alt="" />
             </div>
             <div className="span6">
               <h5>Product Name </h5>
@@ -33,7 +33,7 @@ class ListView extends Component {
           <hr className="soften" />
           <div className="row-fluid">	  
             <div className="span2">
-              <img src="assets/img/b.jpg" alt="" />
+              <img src=" ./assets/img/b.jpg" alt="" />
             </div>
             <div className="span6">
               <h5>Product Name </h5>
@@ -59,7 +59,7 @@ class ListView extends Component {
           <hr className="soften" />
           <div className="row-fluid">	  
             <div className="span2">
-              <img src="assets/img/c.jpg" alt="" />
+              <img src=" ./assets/img/c.jpg" alt="" />
             </div>
             <div className="span6">
               <h5>Product Name </h5>
@@ -85,7 +85,7 @@ class ListView extends Component {
           <hr className="soften" />
           <div className="row-fluid">	  
             <div className="span2">
-              <img src="assets/img/d.jpg" alt="" />
+              <img src=" ./assets/img/d.jpg" alt="" />
             </div>
             <div className="span6">
               <h5>Product Name </h5>
@@ -111,7 +111,7 @@ class ListView extends Component {
           <hr className="soften" />
           <div className="row-fluid">	  
             <div className="span2">
-              <img src="assets/img/e.jpg" alt="" />
+              <img src=" ./assets/img/e.jpg" alt="" />
             </div>
             <div className="span6">
               <h5>Product Name </h5>
@@ -137,7 +137,7 @@ class ListView extends Component {
           <hr className="soften" />
           <div className="row-fluid">	  
             <div className="span2">
-              <img src="assets/img/f.jpg" alt="" />
+              <img src=" ./assets/img/f.jpg" alt="" />
             </div>
             <div className="span6">
               <h5>Product Name </h5>
@@ -163,7 +163,7 @@ class ListView extends Component {
           <hr className="soften" />
           <div className="row-fluid">	  
             <div className="span2">
-              <img src="assets/img/g.jpg" alt="" />
+              <img src=" ./assets/img/g.jpg" alt="" />
             </div>
             <div className="span6">
               <h5>Product Name </h5>
@@ -189,7 +189,7 @@ class ListView extends Component {
           <hr className="soften" />
           <div className="row-fluid">	  
             <div className="span2">
-              <img src="assets/img/h.jpg" alt="" />
+              <img src=" ./assets/img/h.jpg" alt="" />
             </div>
             <div className="span6">
               <h5>Product Name </h5>
@@ -215,7 +215,7 @@ class ListView extends Component {
           <hr className="soften" />
           <div className="row-fluid">	  
             <div className="span2">
-              <img src="assets/img/i.jpg" alt="" />
+              <img src=" ./assets/img/i.jpg" alt="" />
             </div>
             <div className="span6">
               <h5>Product Name </h5>
@@ -241,7 +241,7 @@ class ListView extends Component {
           <hr className="soften" />
           <div className="row-fluid">	  
             <div className="span2">
-              <img src="assets/img/a.jpg" alt="" />
+              <img src=" ./assets/img/a.jpg" alt="" />
             </div>
             <div className="span6">
               <h5>Product Name </h5>
@@ -267,7 +267,7 @@ class ListView extends Component {
           <hr className="soften" />
           <div className="row-fluid">	  
             <div className="span2">
-              <img src="assets/img/b.jpg" alt="" />
+              <img src=" ./assets/img/b.jpg" alt="" />
             </div>
             <div className="span6">
               <h5>Product Name </h5>
@@ -291,7 +291,7 @@ class ListView extends Component {
             </div>
           </div>
         </div>
-      </React.Fragment> 
+      </div> 
     )
   }
 }

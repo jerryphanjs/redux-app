@@ -13,6 +13,8 @@ import MainHeader from './components/Layout/Main/MainHeader';
 import Sidebar from './components/Layout/Sidebar/Sidebar'; 
 import FooterCopy from './components/Layout/Footer/FooterCopy';
 import Account from './components/Acount';
+import ListView from './components/Layout/Main/Views/ListView';
+import GridView from './components/Layout/Main/Views/GridView';
 
 
 class App extends Component {
@@ -29,11 +31,13 @@ class App extends Component {
               <div id="sidebar" className="span3">
                 <Sidebar />
               </div>
-              <Route path="/" exact component={Home} />
-              <Route path="/account" exact component={Account} />
+              <Route exact path="/" component={Home} />
+              <Route path="/account" component={Account} />
               <Route path="/cart" component={Cart} />
               <Route path="/contact" component={Contact} />
               <Route path="/register" component={Register} />
+              <Route path="/home/listview" component={ListView} />
+              <Route path="/home/gridview" component={GridView} />
             </div>
             <div className="row">
               <Footer />
