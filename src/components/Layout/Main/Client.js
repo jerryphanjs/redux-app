@@ -1,5 +1,13 @@
 import React from 'react';
 
+const clients = [
+  './assets/img/1.png',
+  './assets/img/2.png',
+  './assets/img/3.png',
+  './assets/img/4.png',
+  './assets/img/5.png',
+  './assets/img/6.png',
+]
 const Client = () => {
   return (
      <section className="our_client">
@@ -7,24 +15,14 @@ const Client = () => {
       <h4 className="title cntr"><span className="text">Manufactures</span></h4>
       <hr className="soften" />
       <div className="row">
-        <div className="span2">
-          <a href="/"><img alt="" src="./assets/img/1.png" /></a>
-        </div>
-        <div className="span2">
-          <a href="/"><img alt="" src="./assets/img/2.png" /></a>
-        </div>
-        <div className="span2">
-          <a href="/"><img alt="" src="./assets/img/3.png" /></a>
-        </div>
-        <div className="span2">
-          <a href="/"><img alt="" src="./assets/img/4.png" /></a>
-        </div>
-        <div className="span2">
-          <a href="/"><img alt="" src="./assets/img/5.png" /></a>
-        </div>
-        <div className="span2">
-          <a href="/"><img alt="" src="./assets/img/6.png" /></a>
-        </div>
+        {
+          clients.map((client, index) => (
+            <div className="span2" key={index}>
+             <a href="/"><img alt="" src={client} /></a>
+            </div>
+          ))
+          
+        }
       </div>
     </section>
   )

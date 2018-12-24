@@ -1,13 +1,18 @@
 import React, { Component } from 'react';
 
+const iconClass = ['icon-twitter', 'icon-facebook', 'icon-youtube', 'icon-tumblr'];
+
 class TopLeft extends Component {
   render() {
     return (
-       <div className="pull-left socialNw">
-        <a href="/"><span className="icon-twitter"></span></a>
-        <a href="/"><span className="icon-facebook"></span></a>
-        <a href="/"><span className="icon-youtube"></span></a>
-        <a href="/"><span className="icon-tumblr"></span></a>
+      <div className="pull-left socialNw">
+        {
+          iconClass.map((icon, index) => (
+            <a href="/" key={index}>
+              <span className={icon}></span>
+            </a>
+          ))
+        }
       </div>
     )
   }

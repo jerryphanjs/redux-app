@@ -3,7 +3,7 @@
 #header p{padding:0; margin:0; line-height:1em; font-size:100%}
 #header h1{margin:0;line-height:1em }
 #header h1.dotmark{line-height:1.5em;}
-#header{ padding-top:44px;}
+@media screen and(min-width) { #header { padding-top:44px}}
 .logo {padding-top: 11px;display: block;}
 .logo span{display:none}
 .dotmark{padding:4px; font-size:14px; line-height:1.5em;  background:#fff; border:1px dashed rgb(252, 111, 0); margin:0; color:rgb(252, 111, 0); position:relative;}
@@ -60,7 +60,7 @@ hr.soften {margin: 8px 0;background: #DDD;}
 .caption p{margin:0}
 .caption h4{margin:0}
 .thumbnail .caption {padding: 9px;color: #555555;background: #F3F2F2;}
-.footer {color:#eee; padding: 28px 8px 18px; margin-top: 18px;}
+.footer {color:#000; padding: 28px 8px 18px; margin-top: 18px;}
 .footer a{color:#000; font-size:12px;}
 .copyright {clear: both; padding: 8px; border-top: 1px solid #CCC; font-size: 13px; background: #f2f2f2; box-shadow: 0 0 3px #B1AFAF;}
 .topNav{padding: 0;border-bottom: 1px solid #CCC;background: #f2f2f2;box-shadow: 0 0 3px #B1AFAF;}
@@ -107,3 +107,6 @@ hr.soften {margin: 8px 0;background: #DDD;}
 #gototop{margin-top:1px;}
 #footerMenu a{ font-size:12px; text-transform:lowercase}
 .socialNw a {margin: 0 5px}
+a, img { transition: all 0.3s ease-out}
+a:hover img {opacity: 0.5}
+.navbar .nav>li>a.active {color:#fff; background: #f89406; text-decoration: none}

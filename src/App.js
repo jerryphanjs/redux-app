@@ -26,7 +26,7 @@ class App extends Component {
             <MainHeader />
             <NavbarCollapse />
             <div className="row">
-              <div id="sidebar" class="span3">
+              <div id="sidebar" className="span3">
                 <Sidebar />
               </div>
               <Route path="/" exact component={Home} />

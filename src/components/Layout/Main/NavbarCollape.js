@@ -1,5 +1,33 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
+const links = [
+  {
+   path: '/',
+   desc: 'Home',
+  },
+  {
+   path: '/listview',
+   desc: 'List View',
+  },
+  {
+   path: '/gridview',
+   desc: 'Grid View',
+  },
+  {
+   path: '/threecolview',
+   desc: 'Three Column',
+  },
+  {
+   path: '/fourcolview',
+   desc: 'Four Column',
+  },
+  {
+   path: '/generaview',
+   desc: 'General',
+  },
+  
+]
 const NavbarCollapse = () => {
   return (
     <div className="navbar">
@@ -12,12 +40,19 @@ const NavbarCollapse = () => {
           </a>
           <div className="nav-collapse">
             <ul className="nav">
-              <li className="active"><a href="index.html">Home </a></li>
+              {
+                links.map((link,index) => (
+                  <li key={index} >
+                    <NavLink to={link.path}>{link.desc}</NavLink>
+                  </li>
+                ))  
+              }
+              {/* <li className="active"><a href="index.html">Home </a></li>
               <li><a href="list-view.html">List View</a></li>
               <li><a href="grid-view.html">Grid View</a></li>
               <li><a href="three-col.html">Three Column</a></li>
               <li><a href="four-col.html">Four Column</a></li>
-              <li><a href="general.html">General Content</a></li>
+              <li><a href="general.html">General Content</a></li> */}
             </ul>
             <form action="/" className="navbar-search pull-left">
               <input type="text" placeholder="Search" className="search-query span2" />

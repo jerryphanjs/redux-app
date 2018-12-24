@@ -1,19 +1,46 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
+
+const menu = [ 
+  {
+    link: '/',
+    class: 'icon-home',
+    title: 'Home'
+  },
+  {
+    link: '/account',
+    class: 'icon-user',
+    title: 'Account'
+  },
+  {
+    link: '/register',
+    class: 'icon-edit',
+    title: 'Free Register'
+  },
+  {
+    link: '/contact',
+    class: 'icon-envelope',
+    title: 'Contact us'
+  },
+];
+
+let noItem = ' 2 Item(s) -';
+let total = '$448.42'
 
 class Navbar extends Component {
   render() {
     return (
       <React.Fragment>
-        <Link to="/" className="active"><span className="icon-home"></span> Home</Link>
-        <Link to="/account"><span className="icon-user"></span> Account</Link>
-        <Link to="/register"><span className="icon-edit"></span> Free Register </Link>
-        <Link to="/contact"><span className="icon-envelope"></span> Contact us</Link>
-        <Link to="/cart">
+        {
+          menu.map((menu, index) => (
+            <NavLink to={menu.link} key={index}><span className={menu.class}></span>{' ' + menu.title}</NavLink>
+          ))
+        }
+        <NavLink to="/cart">
           <span className="icon-shopping-cart"></span>
-           2 Item(s) - 
-          <span className="badge badge-warning"> $448.42</span>
-        </Link>
+           {noItem}
+          <span className="badge badge-warning"> {total}</span>
+        </NavLink>
       </React.Fragment>
     )
   }
