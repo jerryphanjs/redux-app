@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import Navbar from './Navbar';
+import Navbar from './Header/TopNavbar';
+import TopLeft from './Header/TopLeft';
 
 class Header extends Component {
   render() {
@@ -9,12 +10,7 @@ class Header extends Component {
           <div className="topNav">
             <div className="container">
               <div className="alignR">
-                <div className="pull-left socialNw">
-                  <a href="/"><span className="icon-twitter"></span></a>
-                  <a href="/"><span className="icon-facebook"></span></a>
-                  <a href="/"><span className="icon-youtube"></span></a>
-                  <a href="/"><span className="icon-tumblr"></span></a>
-                </div>
+                <TopLeft />
                 <Navbar />
               </div>
             </div>

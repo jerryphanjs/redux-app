@@ -6,10 +6,14 @@ class Navbar extends Component {
     return (
       <React.Fragment>
         <Link to="/" className="active"><span className="icon-home"></span> Home</Link>
-        <Link to="/account"><span className="icon-user"></span> My Account</Link>
+        <Link to="/account"><span className="icon-user"></span> Account</Link>
         <Link to="/register"><span className="icon-edit"></span> Free Register </Link>
         <Link to="/contact"><span className="icon-envelope"></span> Contact us</Link>
-        <Link to="/cart"><span className="icon-shopping-cart"></span> 2 Item(s) - <span className="badge badge-warning"> $448.42</span></Link>
+        <Link to="/cart">
+          <span className="icon-shopping-cart"></span>
+           2 Item(s) - 
+          <span className="badge badge-warning"> $448.42</span>
+        </Link>
       </React.Fragment>
     )
   }

@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
+import BreadCrumb from './Layout/Other/BreadCrumb';
 
 class Register extends Component {
   render() {
     return (
+    <React.Fragment>
       <div className="span9">
-        <ul className="breadcrumb">
-          <li><a href="index.html">Home</a> <span className="divider">/</span></li>
-          <li className="active">Registration</li>
-        </ul>
+        <BreadCrumb />
         <h3> Registration</h3>	
         <hr className="soft" />
         <div className="well">
@@ -206,6 +205,7 @@ class Register extends Component {
           </form>
         </div>
       </div>
+    </React.Fragment>
     )
   }
 }

@@ -1,15 +1,13 @@
 import React, { Component } from 'react';
+import BreadCrumb from './Layout/Other/BreadCrumb';
 
 class Cart extends Component {
   render() {
     return (
       <React.Fragment>
         <div className="row">
-          <div className="span12">
-            <ul className="breadcrumb">
-              <li><a href="index.html">Home</a> <span className="divider">/</span></li>
-              <li className="active">Check Out</li>
-            </ul>
+          <div className="span9">
+            <BreadCrumb />
             <div className="well well-small">
               <h1>Check Out <small className="pull-right"> 2 Items are in the cart </small></h1>
               <hr className="soften" />	
@@ -27,7 +25,7 @@ class Cart extends Component {
                 </thead>
                 <tbody>
                   <tr>
-                    <td><img width={100} src="assets/img/e.jpg" alt /></td>
+                    <td><img width={100} src="assets/img/e.jpg" alt="" /></td>
                     <td>Items name here<br />Carate : 22<br />Model : n/a</td>
                     <td> - </td>
                     <td><span className="shopBtn"><span className="icon-ok" /></span> </td>
@@ -41,7 +39,7 @@ class Cart extends Component {
                     <td>$100.00</td>
                   </tr>
                   <tr>
-                    <td><img width={100} src="assets/img/f.jpg" alt /></td>
+                    <td><img width={100} src="assets/img/f.jpg" alt="" /></td>
                     <td>Item names and brief details<br />Carate:24 <br />Model:HBK24</td>
                     <td> - </td>
                     <td><span className="shopBtn"><span className="icon-ok" /></span> </td>
@@ -118,31 +116,6 @@ class Cart extends Component {
             </div>
           </div>
         </div>
-        <section className="our_client">
-        <hr className="soften" />
-        <h4 className="title cntr"><span className="text">Manufactures</span></h4>
-        <hr className="soften" />
-        <div className="row">
-          <div className="span2">
-            <a href="/"><img alt="" src="./assets/img/1.png" /></a>
-          </div>
-          <div className="span2">
-            <a href="/"><img alt="" src="./assets/img/2.png" /></a>
-          </div>
-          <div className="span2">
-            <a href="/"><img alt="" src="./assets/img/3.png" /></a>
-          </div>
-          <div className="span2">
-            <a href="/"><img alt="" src="./assets/img/4.png" /></a>
-          </div>
-          <div className="span2">
-            <a href="/"><img alt="" src="./assets/img/5.png" /></a>
-          </div>
-          <div className="span2">
-            <a href="/"><img alt="" src="./assets/img/6.png" /></a>
-          </div>
-        </div>
-      </section>
       </React.Fragment>
     )
   }
